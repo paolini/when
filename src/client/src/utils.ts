@@ -1,18 +1,18 @@
 import { isNil } from "lodash";
 
 const monthNames = new Array();
-monthNames[0] = "Jan";
-monthNames[1] = "Feb";
-monthNames[2] = "Mar";
-monthNames[3] = "Apr";
-monthNames[4] = "May";
-monthNames[5] = "Jun";
-monthNames[6] = "Jul";
-monthNames[7] = "Aug";
-monthNames[8] = "Sep";
-monthNames[9] = "Oct";
-monthNames[10] = "Nov";
-monthNames[11] = "Dec";
+monthNames[1] = "Jan";
+monthNames[2] = "Feb";
+monthNames[3] = "Mar";
+monthNames[4] = "Apr";
+monthNames[5] = "May";
+monthNames[6] = "Jun";
+monthNames[7] = "Jul";
+monthNames[8] = "Aug";
+monthNames[9] = "Sep";
+monthNames[10] = "Oct";
+monthNames[11] = "Nov";
+monthNames[12] = "Dec";
 const getMonths = function () {
   return monthNames;
 };

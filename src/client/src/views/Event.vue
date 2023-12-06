@@ -24,7 +24,7 @@
 
     <button @click="clearAll" class="drop-shadow">
       <img
-        src="https://image.flaticon.com/icons/png/512/72/72205.png"
+        src="https://cdn-icons-png.flaticon.com/512/72/72205.png"
         width="30"
         alt=""
         srcset=""
