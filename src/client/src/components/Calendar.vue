@@ -58,6 +58,7 @@ export default {
   flex-direction: row;
   justify-content: center;
   margin-right: 10px;
+  height: fit-content;
 }
 
 .calendar {

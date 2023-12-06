@@ -4,21 +4,7 @@
     <div class="information">
       <h1>{{ eventName }}</h1>
       <div class="date-chooser">
-        <div
-          class="left"
-          @click="page !== 0 && page--"
-          :class="page === 0 ? 'unactive' : ''"
-        >
-          <i class="fas fa-angle-left"></i>
-        </div>
         <p>{{ eventRange }}</p>
-        <div
-          class="right"
-          @click="page !== pageNumbers && page++"
-          :class="page === pageNumbers ? 'unactive' : ''"
-        >
-          <i class="fas fa-angle-right"></i>
-        </div>
       </div>
     </div>
 
@@ -33,7 +19,21 @@
   </div>
 
   <div class="content">
+    <div
+      class="left"
+      @click="page !== 0 && page--"
+      :class="page === 0 ? 'unactive' : ''"
+    >
+      <i class="fas fa-angle-left"></i>
+    </div>
     <Calendar :userName="userName" :page="page" />
+    <div
+      class="right"
+      @click="page !== pageNumbers && page++"
+      :class="page === pageNumbers ? 'unactive' : ''"
+    >
+      <i class="fas fa-angle-right"></i>
+    </div>
     <div class="right-information">
       <Participants />
       <EventDetails />
@@ -110,11 +110,6 @@ export default {
         padding: 0 20px;
         font-size: 1.6rem;
       }
-      .left,
-      .right {
-        cursor: pointer;
-        font-size: 2rem;
-      }
     }
   }
 
@@ -134,6 +129,11 @@ export default {
 .content {
   display: flex;
   justify-content: start;
+  .left,
+  .right {
+    cursor: pointer;
+    font-size: 3rem;
+  }
 }
 
 .fade-enter-active,

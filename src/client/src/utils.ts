@@ -76,11 +76,11 @@ const getLabelTop = function (start: string, end: string): string {
   const first = new Date(start);
   const last = new Date(end);
   return (
-    first.getDate() +
+    (first.getDate() + 1) +
     " " +
     monthNames[first.getMonth() + 1] +
     " - " +
-    last.getDate() +
+    (last.getDate() + 1) +
     " " +
     monthNames[last.getMonth() + 1]
   );
