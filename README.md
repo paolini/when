@@ -7,23 +7,21 @@ This project is a clone of the website [when2meet](when2meet.com). We decided to
 
 To run the application, first clone it and install the dependencies
 ```
-npm install
+npm ci
 ```
 
-### Step 2: Create a mongodb database
+### Step 2: Setup a mongodb database
 
 See instructions [here](https://www.mongodb.com/basics/create-database).
 
 
 ### Step 3: Add environment variables
 
-Clone the `.env.example` file
+Clone the `env.example` file and set the appropriate values 
 
 ```
-cp .env.example .env
+cp env.example .env
 ```
-
-Add the mongodb URI.
 
 ### Step 4: Run dev server
 
